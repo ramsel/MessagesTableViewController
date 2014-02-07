@@ -67,19 +67,19 @@
         [self addSubview:bubbleImageView];
         _bubbleImageView = bubbleImageView;
         
-        UITextView *textView = [[UITextView alloc] init];
+        WSLanguageLabel *textView = [[WSLanguageLabel alloc] init];
         textView.font = [UIFont systemFontOfSize:16.0f];
         textView.textColor = [UIColor blackColor];
-        textView.editable = NO;
-        textView.userInteractionEnabled = YES;
-        textView.showsHorizontalScrollIndicator = NO;
-        textView.showsVerticalScrollIndicator = NO;
-        textView.scrollEnabled = NO;
+//        textView.editable = NO;
+//        textView.userInteractionEnabled = YES;
+//        textView.showsHorizontalScrollIndicator = NO;
+//        textView.showsVerticalScrollIndicator = NO;
+//        textView.scrollEnabled = NO;
         textView.backgroundColor = [UIColor clearColor];
         textView.contentInset = UIEdgeInsetsZero;
-        textView.scrollIndicatorInsets = UIEdgeInsetsZero;
-        textView.contentOffset = CGPointZero;
-        textView.dataDetectorTypes = UIDataDetectorTypeNone;
+//        textView.scrollIndicatorInsets = UIEdgeInsetsZero;
+//        textView.contentOffset = CGPointZero;
+//        textView.dataDetectorTypes = UIDataDetectorTypeNone;
         [self addSubview:textView];
         [self bringSubviewToFront:textView];
         _textView = textView;

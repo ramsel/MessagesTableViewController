@@ -14,6 +14,10 @@
 
 #import <UIKit/UIKit.h>
 #import "JSBubbleImageViewFactory.h"
+#import "WSLanguageLabel.h"
+
+
+@class WSLanguageLabel;
 
 /**
  *  An instance of JSBubbleView is a means for displaying text in a speech bubble image to be placed in a JSBubbleMessageCell. 
@@ -37,7 +41,7 @@
  *
  *  @warning You may customize the propeties of textView, however you *must not* change its `font` property directly. Please use the `JSBubbleView` font property instead.
  */
-@property (weak, nonatomic, readonly) UITextView *textView;
+@property (weak, nonatomic, readonly) WSLanguageLabel *textView;
 
 /**
  *  The font for the text contained in the bubble view. The default value is `[UIFont systemFontOfSize:16.0f]`.
